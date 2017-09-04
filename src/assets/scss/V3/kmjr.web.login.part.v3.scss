@@ -1,0 +1,113 @@
+@import "../scssMin/kmjr.comm.hacker";
+@import "../scssMin/kmjr.comm.reset";
+/****import comm****/
+@import "kmjr.web.v3.comm";
+
+/**login**/
+.warp-login{ background:#BB0018 url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/web/login/loginPart_banner.png') top center no-repeat; min-height: 498px; }
+.container-box{ background: #BB0018  url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/web/login/loginPart_banner.png') top center no-repeat;  min-height: 498px; }
+.panel-login{ box-shadow: 0 0 0 1px $clr-gray-border inset;box-shadow: 0 0 0 1px rgba(0,0,0,.15); border-radius: .5em; padding: 1.5em 1.5em; margin-top: 3.5em; margin-bottom: 3.5em ; background-color: #f5f5f5;background-color: rgba(255,255,255,1); }
+.panel-login .panel-head{ @extend .text-normal-max;position: relative; border-bottom: 1px solid $clr-gray-border-light; font-size: 1em;color:$clr-blue-text; padding:.5em 0 1em; text-align: center; }
+//.panel-login .panel-head:before,
+//.panel-login .panel-head:after{content: '';display: block;position: absolute; left: 0; top: 50%; width: 25%;height: 0; border-top: 1px solid $clr-gray-border; z-index: 1}
+//.panel-login .panel-head:after{ right: 0; left: inherit}
+.pop-blue{ background-color:#ff4040; @extend .text-tips; border-radius: .25rem; color: white; padding: .125rem .5rem; margin-right: .5em; font-weight: bold;}
+.panel-login .panel-head .txt{  position: relative;z-index: 2; display: inline-block;  @extend .text-h2;font-weight: bold }
+label.form-checkbox [type="checkbox"] + label .icon{ vertical-align: inherit ; }
+.panel-login .form-cell{padding: .25em 0}
+.panel-login .form-control{ width: 100%;}
+.panel-login  input.form-control{ box-shadow: 0 0 .5em 0 $clr-gray-border inset;}
+.panel-login .from-cell-2  input.form-control{width: 50%;}
+.panel-login .from-cell-2  button.form-control{width: 48%; }
+.form-control-timer{ padding:.75em 0.25em;width: 133px;white-space: nowrap;word-break: keep-all;}
+.footer{ min-height: 410px; margin-top:0;}
+
+.logo{ padding-bottom: 1em;}
+
+.warp-box{ background:$clr-gray-bg; width: 1240px;margin: 0 auto; }
+.warp-container{ background: $clr-gray-bg; width: 100%; }
+
+.warp-box-white{ background:$clr-white; width: 1240px;margin: 0 auto; }
+.warp-container-white{ background: $clr-white; width: 100%; }
+
+.warp-box-bg{ width: 1240px;margin: 0 auto; min-height: 500px; }
+.warp-container-bg{ background: $clr-white  url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrWeb/loginPart/login_part_31.jpg') bottom center repeat-x; width: auto;}
+
+.warp-box-ban{ background:#262528  url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrWeb/loginPart/login_part_32.jpg') bottom center no-repeat; width: 1240px;margin: 0 auto; min-height: 438px; }
+.warp-container-ban{ background: #262528  url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrWeb/loginPart/login_part_32.jpg') bottom center no-repeat; width: 100%; }
+
+
+.btn-card{ display: block; width: 30%; text-align: center; color: white; background-color: #e64133; position: absolute; left: 35%; bottom: 3em; @extend .text-h2;padding: .35em 0; border-radius: 999em;}
+
+.from-cell-2{ float: none; display: block }
+.from-cell-2 .form-control.form-control-timer{ margin-left: inherit; float: right !important}
+
+/****/
+.panel-card{ background-color: $clr-white; width: 90%; margin: 0 auto 4em; -ms-transition: all .125s;transition: all .125s; -webkit-transition: all .125s; -ms-transform: translateY(0);transform: translateY(0); padding: 0}
+.panel-card:hover{ -ms-transform:translateY(-2px); transform: translateY(-2px); box-shadow: 0 0 0 1px rgba(251,208,208,1) inset;}
+.panel-card .tit{ text-align: left; padding-left: 1px; padding-top: 1px;}
+.panel-card .btn-box{ padding-top: 3em; padding-bottom: 2em;}
+.panel-card .btn.max{@extend .text-h2;padding: .5em 0; width: 45%; margin: 0 auto; }
+
+/******/
+.warp-box-tit{ padding: 3em 0 3em;}
+
+/******/
+.guarantee{padding-bottom: 4em; padding-top: 4em; margin-bottom: 4em; background-color: #ffeeee;}
+.guarantee-bg-gray{background-color: $clr-gray-bg; min-width: 1170px;}
+.guarantee .container{min-width: 1170px}
+.gurrantee-tit{@extend .text-h1-normal; padding-bottom:2.5em; padding-top: 1.5em;text-align: center}
+.guarantee-cell{ float: left;width: 25%;text-align: center}
+.gt-cell-img{width: 100px; height: 100px; border: 4px solid $clr-white; box-shadow: 0 0 0 1px $clr-red-text; border-radius: 999px; padding: 2em; margin: 0 auto; background-color: $clr-red-normal;color: white;-webkit-transition:all .5s; -ms-transition: all .5s;transition: all .5s;}
+.gt-cell-img .icon{font-size: 4em; line-height: 1.75}
+.gt-cell-img:hover{  box-shadow: 0 0 0 5px $clr-red-text; }
+.gt-cell-tit{@extend .text-h1; padding: 1em 0; color: $clr-red-text;}
+.gt-cell-tips{@extend .text-h2; color: $clr-gray-black; line-height: 1.5}
+
+/******/
+.warp-box-bg{ overflow: hidden;}
+@keyframes showLine {
+  from{transform: translateX(-1600px);width: 0}
+  to{transform: translateX(0); width: 98%;}
+}
+.axis{position: relative; margin-top: 6em;}
+.axis-line{width: 98%; height: 4px;background: #000; background: linear-gradient(to right,$clr-black-text,$clr-black-text 60%,$clr-red-text 100%); background: -ms-linear-gradient(left,$clr-black-text,$clr-black-text 60%,$clr-red-text 100%);background: -webkit-linear-gradient(left,$clr-black-text,$clr-black-text 60%,$clr-red-text 100%);background: -moz-linear-gradient(left,$clr-black-text,$clr-black-text 60%,$clr-red-text 100%); transform: translateX(0);-ms-transform: translateX(0);-webkit-transform: translateX(0);}
+.axis-line.animation{animation: showLine 1.5s;-webkit-animation: showLine 1.5s;-ms-animation:showLine 1.5s; }
+.axis-corner{ height: 0;width: 0;  border-left:1.25em solid $clr-red-text; border-top:.625em solid transparent; border-bottom: .625em solid transparent; position: absolute;right: -.75em; right: .75em\9; top: -.5em;}
+@media all and (min-width: 0) {
+  .axis-corner{ right: -.75em;}
+}
+.axis-block{ position: absolute; left: 0; bottom: 0; text-align: center; width:350px; transition: all .5s; -ms-transition: all .5s;-webkit-transition: all .5s;}
+$position-left:180px;
+@for $i from 0 through 10{
+  .axis-block.nth_#{$i}{ left:($position-left*$i); top: inherit; bottom: -4px; }
+}
+.axis-block.bottom:before{ content: '';display: block;height: 8px; width: 8px; border-radius: 999em; background-color: $clr-black-text; border:8px solid $clr-white;box-shadow: 0 0 0 1px $clr-black-text; position: relative; left: 165px; top: -10px; bottom: inherit;transition: all .5s; -ms-transition: all .5s;-webkit-transition: all .5s;}
+.axis-block.top:after{ content: '';display: block;height: 8px; width: 8px; border-radius: 999em; background-color: $clr-black-text; border:8px solid $clr-white; box-shadow: 0 0 0 1px $clr-black-text; position: relative; left: 165px;  bottom: -6px; top: inherit;transition: all .5s; -ms-transition: all .5s;-webkit-transition: all .5s;}
+.axis-block.bottom{ top: 0; bottom: inherit;}
+.axis-block.now{ color: $clr-red-text;}
+.axis-block.now:after,
+.axis-block.now:before{background-color: $clr-red-text; box-shadow: 0 0 0 1px $clr-red-text;}
+.axis-tit{ font-weight: bold; @extend .text-h2;transition: all .25s; -ms-transition: all .25s;-webkit-transition: all .25s;}
+.axis-dsp{ @extend .text-h2;transition: all .25s; -ms-transition: all .25s;-webkit-transition: all .25s;}
+.axis-block:hover .axis-tit,
+.axis-block:hover .axis-dsp{ color: $clr-red-text;}
+.axis-block:hover:after,
+.axis-block:hover:before{box-shadow: 0 0 0 1px $clr-red-text;  background-color: $clr-red-text;}
+
+/******/
+.warp-container-ban{}
+.warp-container-ban .warp-box-tit{ padding-top: 8em;}
+.warp-container-ban .btn-box{ padding-top: 3em; width: 20%; margin: 0 auto;}
+.warp-container-ban .btn-box .btn{ @extend .text-h1;}
+
+@keyframes sloganShow {
+  0%{ transform: translate(-20px,-20px);-webkit-transform: translate(-20px,-20px);-ms-transform: translate(-20px,-20px); opacity: 0;}
+  70%{ transform: translate(20px,-20px);-webkit-transform: translate(20px,-20px);-ms--transform: translate(20px,-20px); opacity: .5;}
+  100%{ transform: translate(0,0);-webkit-transform: translate(0,0);-ms-transform: translate(0,0); opacity: 1}
+}
+.ban-slogan{opacity: 1; -ms-transform: translateX(0);transform: translateX(0);  }
+.ban-slogan.animation{animation: sloganShow 3s;}
+
+/*****/
+@import "../extra/sweetalert";

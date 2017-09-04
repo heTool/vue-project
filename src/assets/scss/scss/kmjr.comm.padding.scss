@@ -1,0 +1,104 @@
+/*padding*/
+/**/
+@for $i from 1 to 11 {
+  @if $i/2==0.5{
+    .padding-left-0_5em{
+      padding-left:#{$i/2}em;
+    };
+    .padding-right-0_5em{
+      padding-right:#{$i/2}em;
+    };
+    .padding-top-0_5em{
+      padding-top:#{$i/2}em;
+    };
+    .padding-bottom-0_5em{
+      padding-bottom:#{$i/2}em;
+    };
+  }
+  @else if $i/2==1.5 {
+    .padding-left-1_5em{
+      padding-left:#{$i/2}em;
+    };
+    .padding-right-1_5em{
+      padding-right:#{$i/2}em;
+    };
+    .padding-top-1_5em{
+      padding-top:#{$i/2}em;
+    };
+    .padding-bottom-1_5em{
+      padding-bottom:#{$i/2}em;
+    };
+  }
+  @else if $i/2==2.5 {
+    .padding-left-2_5em{
+      padding-left:#{$i/2}em;
+    };
+    .padding-right-2_5em{
+      padding-right:#{$i/2}em;
+    };
+    .padding-top-2_5em{
+      padding-top:#{$i/2}em;
+    };
+    .padding-bottom-2_5em{
+      padding-bottom:#{$i/2}em;
+    };
+  }
+  @else if $i/2==3.5 {
+    .padding-left-3_5em{
+      padding-left:#{$i/2}em;
+    };
+    .padding-right-3_5em{
+      padding-right:#{$i/2}em;
+    };
+    .padding-top-3_5em{
+      padding-top:#{$i/2}em;
+    };
+    .padding-bottom-3_5em{
+      padding-bottom:#{$i/2}em;
+    };
+  }
+  @else if $i/2==4.5 {
+    .padding-left-4_5em{
+      padding-left:#{$i/2}em;
+    };
+    .padding-right-4_5em{
+      padding-right:#{$i/2}em;
+    };
+    .padding-top-4_5em{
+      padding-top:#{$i/2}em;
+    };
+    .padding-bottom-4_5em{
+      padding-bottom:#{$i/2}em;
+    };
+  }
+  @else{
+    .padding-left-#{$i/2}em{
+      padding-left:#{$i/2}em;
+    };
+    .padding-right-#{$i/2}em{
+      padding-right:#{$i/2}em;
+    };
+    .padding-top-#{$i/2}em{
+      padding-top:#{$i/2}em;
+    };
+    .padding-bottom-#{$i/2}em{
+      padding-bottom:#{$i/2}em;
+    };
+  }
+}
+
+/**/
+@for $i from 1 to 21 {
+  .padding-left-#{$i}{
+    padding-left:#{$i}px;
+  };
+  .padding-right-#{$i}{
+    padding-right:#{$i}px;
+  };
+  .padding-top-#{$i}{
+    padding-top:#{$i}px;
+  };
+  .padding-bottom-#{$i}{
+    padding-bottom:#{$i}px;
+  };
+}

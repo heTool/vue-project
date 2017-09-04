@@ -1,0 +1,123 @@
+@import "../scssMin/kmjr.comm.hacker";
+@import "../scssMin/kmjr.comm.reset";
+
+@import "kmjr.web.v3.comm";
+/**col**/
+/****/
+/********/
+.slider,
+.slider .container{background: #f0f0f0 url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/web/defaut/default_banner_01.jpg') top center no-repeat; width: 100%;}
+.slider.slider-about,
+.slider.slider-about .container{background-image:url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/web/about/about_top_banner.jpg'); height: 140px }
+.slider.slider-insurance,
+.slider.slider-insurance .container{background-image:url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/web/insurance/ins_banner_top.jpg'); height: 400px }
+.slider.slider-insurance-middle,
+.slider.slider-insurance-middle .container{background-image:url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/web/insurance/ins_banner_middle.png'); height: 217px; color: white;}
+.slider.slider-insurance-middle02,
+.slider.slider-insurance-middle02 .container{background-image:url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/web/insurance/ins_banner_middle02.jpg'); height: 422px; color: white;}
+
+.slider .container{height: 400px;width: 1170px; overflow: hidden}
+.slider.slider-about .container{height: 380px}
+.slider.slider-news-detail .container{height: 380px}
+.slider.slider-safe .container{height: 380px;}
+.slider.slider-info .container{height: 380px;}
+
+.slider .container{}
+
+.slider-container{height: 400px;overflow: hidden; position: relative}
+.slider-container .iconfont-slider{ position: absolute;color: white; ;color: rgba(255,255,255,.4); padding: .125em 0; cursor: pointer; position: absolute; z-index: 20; font-size: 50px; line-height:50px;left: 0; top:160px; opacity: 0; transition: all .5s;-ms-transition: all .5s;}
+.slider-container .iconfont-slider.icon-arrow-right{right: 0; left: inherit}
+.slider-container:hover .iconfont-slider{opacity: 1; background-color: rgba(0,0,0,.5)}
+.slider-container .iconfont-slider:hover{background-color: rgba(0,0,0,.2);}
+//.slider-container:before{content: 'prv'; vertical-align: middle; text-align:center;color: #999; font-size:40px;display: block; width: 50px;height: 480px; position: absolute; left: 0; top: 0; z-index: 11; background-color: #333; background-color: rgba(66,66,66,.1);}
+//.slider-container:after{content: 'next'; vertical-align: middle; text-align:center;color: #999;font-size:40px;display: block; width: 50px;height: 480px; position: absolute; right: 0; top: 0; z-index: 12;background-color: #555; background-color: rgba(66,66,66,.1)}
+.slider-banner2{ background: url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/web/defaut/default_banner_02.jpg') top center no-repeat;width: 100%; height: 400px;}
+.slider-elem{position: absolute; left: 0; top: 0;z-index: 1; opacity: 0;  transition: all .5s;-webkit-transition: all .5s;-ms-transition: all .5s; display: none; height: 400px}
+.slider-elem.active{opacity: 1; transition: all .5s;-webkit-transition: all .5s;-ms-transition: all .5s; display: block}
+.slider-elem a{display: block; height: 100%;width: 100%}
+
+.slider-dot{ position: absolute; width: 50%; left: 25%; bottom: 20px; text-align: center; z-index: 6}
+.dot-item{ height: 10px; width: 10px; border-radius: 999px; display: inline-block; margin: 0 2px; background-color: $clr-white;  background-color: rgba($clr-black,.5); box-shadow: 0 0 1px $clr-gray-border; animation: all .25s; -webkit-animation: all .25s; -ms-animation:all .25s;}
+.dot-item.active{  background-color: $clr-red-text; background-color: rgba($clr-white,.5);  box-shadow: 0 0 1px $clr-gray-border;}
+
+/*****/
+.collaborator{ width: 100%; background-color: $clr-gray-bg;}
+.collaborator-list{ padding:5% 0}
+.collaborator-list li{ width: 16.66%; float: left; text-align: center; }
+.collaborator-list li img{ width: 90%;  }
+/****/
+.disclosure{ width: 100%; @extend .border-bottom-solid; padding: 1.5rem 0}
+.disc-cell-tit{ @extend .text-danger; @extend .text-h1;}
+
+/*****/
+.prod{}
+.prod-tabs{}
+.prod-tabs ul:after{}
+.prod-tabs li{ width: 120px; float: left; text-align: center; position: relative}
+.prod-tabs li:after{ content: '';display: block; height: 14px; border-right: 1px solid $clr-gray-border; position: absolute; top:.875em; right: 0}
+.prod-tabs li:last-child:after{border: 0}
+.prod-tabs li a{ display: block;}
+.prod-tabs li a i{ border-bottom: 3px solid transparent; display: inline-block;padding: .75em 0}
+.prod-tabs li.active a{color: $clr-red-normal}
+.prod-tabs li.active a i{ border-bottom-color: $clr-red-normal;}
+.prod-tit-sub{ padding-left: .5em; margin-left:1em; border-left:3px solid $clr-red-normal; line-height: 1; color: $clr-gray-black;@extend .text-normal-max;}
+.pop-first-cast{ vertical-align: sub; vertical-align: -webkit-baseline-middle;}
+
+
+/***about***/
+.container-about{ margin: -3em auto 1em; min-height: 300px}
+.intro-head{ border-top: 3px solid $clr-red-text; text-align: center; padding: 1em 0;@extend .text-h2;}
+.intro-list{ text-align: center;}
+.intro-list li{padding: .75em 0; @extend .text-normal-max}
+.intro-list li.active,
+.intro-list li.active a{@extend .text-danger}
+
+.thumbs{ margin: 0 3em 0; padding: 2em 0; @extend .border-bottom-solid}
+.thumbs:first-child{ margin-top: 2em}
+.thumbs-info{ height: 65px; overflow: hidden}
+
+/***default***/
+.panel-counter{ background:$clr-white url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/web/defaut/default_mark_cornor.png') right top no-repeat; background-size: 71px 71px;}
+.col-cell-ajb{ padding-left: 1.25em}
+.border-tit{ border-left: 3px solid $clr-red-text; padding-left: .5rem; }
+
+.media-thumbs{ padding-right: 1rem;}
+.media-thumbs .dsp{ height: 42px; overflow: hidden; text-overflow:ellipsis;}
+
+.cell-items{ line-height: 2; display: block;}
+.cell-items-dsp{height: 42px; overflow: hidden; text-overflow:ellipsis;line-height: 1.5; padding: 1em 0; @extend .text-comment;}
+
+.pop-safe{  border-radius: 999px; line-height: 1; padding: 5px; width: 40px; height: 40px; display: block;  margin: 1em auto .5em; border: 2px solid $clr-red-text; transition: all .5s;-webkit-transition: all .5s; }
+.pop-safe .icon{ font-size: 40px;}
+.safe-cell:hover .pop-safe{ box-shadow: 0 0 0 2px $clr-red-text;}
+
+.tabs-body{ color: #666;}
+.tabs-body h3{@extend .text-h2; padding:2em 0 .5rem; color: #666 }
+.block-line{ width: 750px; display: block; margin: 3em auto;}
+.box.box-text { text-align: left; color: #666}
+.box.box-text:after {@extend .clear-fixed}
+.box.box-text table{ border-left:1px solid $clr-gray-border; border-top:1px solid $clr-gray-border;width: 100%; float: left;}
+.box.box-text table td{ border-right:1px solid $clr-gray-border; border-bottom:1px solid $clr-gray-border; padding:  1rem}
+.box.box-text table tr:nth-child(1) td:first-child,
+.box.box-text table tr:nth-child(2) td:first-child,
+.box.box-text table tr:nth-child(3) td:first-child,
+.box.box-text table tr:nth-child(4) td:first-child,
+.box.box-text table tr:nth-child(5) td:first-child,
+.box.box-text table tr:nth-child(6) td:first-child{ background-color: #eff7ff; text-align: right}
+.box.box-text table tr:nth-child(7) td:first-child,
+.box.box-text table tr:nth-child(8) td:first-child{ text-align: center}
+.box.box-text .tips-gray{ color: $clr-gray-text; padding: 2rem 0; width: 100%; text-align: center; float: left}
+
+table.table-detail{ border-left:1px solid $clr-gray-border; border-top:1px solid $clr-gray-border; }
+table.table-detail tr th{ background-color: #eff7ff; color: $clr-gray-black; font-weight: normal }
+table.table-detail td{ border-right:1px solid $clr-gray-border; border-bottom:1px solid $clr-gray-border; padding:  1rem}
+table.table-detail tr:hover td{ background-color:$clr-gray-bg }
+
+.pop-info{border-radius: 999px;  line-height: 1;  padding: 5px;  width: 40px;  height: 40px;  display: block;  margin: 1em auto .5em;  border: 3px solid #ffd5ce; background-color: #ff4040; transition: all .5s;  -webkit-transition: all .5s;}
+.pop-info .icon{ font-size: 30px; line-height: 40px;}
+/******/
+.tit-index{ background-color: $clr-red-text; display: inline-block; width: 1.5em; height: 1.5em;color: #fff;  line-height: 1.5em ;font-size: 16px; text-align: center}
+.img-office{ position: relative}
+.img-office img{display: block; margin: 0 auto}
+.img-office-cover{ height: 100%; width: 426px; background-color: #000; opacity: .2;position: absolute; left: 3px; top: 0; transition: all .5s;-webkit-transition: all .5s;-ms-transition: all .5s;}
+.img-office:hover .img-office-cover{ opacity: 0}

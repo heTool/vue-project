@@ -1,0 +1,75 @@
+.fadeIn {
+  transform: translateY(0);
+  -webkit-transform: translateY(0); }
+
+.fadeOut {
+  transform: translateY(-80rem);
+  -webkit-transform: translateY(-80rem); }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
+.clear-fixed:after {
+  display: block;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  content: '';
+  clear: both; }
+
+.va-top {
+  vertical-align: top; }
+
+.va-middle {
+  vertical-align: middle; }
+
+.va-bottom {
+  vertical-align: bottom; }
+
+.va-super {
+  vertical-align: super; }
+
+.text-nowarp {
+  white-space: nowrap;
+  word-break: keep-all; }
+
+.pos-relative {
+  position: relative; }
+
+.pos-absolute {
+  position: absolute; }
+
+.pos-fixed {
+  position: fixed; }
+
+.box-sizing-border {
+  box-sizing: border-box; }
+
+.dsp-block {
+  display: block; }
+
+.font-bold {
+  font-weight: bold; }
+
+.font-light {
+  font-weight: lighter; }
+
+.text-no-warp {
+  white-space: nowrap;
+  word-break: keep-all;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+/*# sourceMappingURL=kmjr.comm.reset.css.map */

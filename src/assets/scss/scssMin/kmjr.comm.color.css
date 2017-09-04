@@ -1,0 +1,132 @@
+/*color*/
+/*black*/
+/*gray*/
+/*background-color&&line*/
+/**/
+.bg-blue-normal {
+  background-color: #336699 !important; }
+
+.text-blue-normal {
+  color: #336699; }
+
+a.text-blue-normal {
+  color: #336699;
+  text-decoration: none; }
+
+a.text-blue-normal:hover {
+  color: #336699;
+  text-decoration: none; }
+
+.bg-black-light {
+  background-color: #666666 !important; }
+
+.text-black-light {
+  color: #666666; }
+
+a.text-black-light {
+  color: #666666;
+  text-decoration: none; }
+
+a.text-black-light:hover {
+  color: #666666;
+  text-decoration: none; }
+
+.bg-black-normal {
+  background-color: #333333 !important; }
+
+.text-black-normal {
+  color: #333333; }
+
+a.text-black-normal {
+  color: #333333;
+  text-decoration: none; }
+
+a.text-black-normal:hover {
+  color: #333333;
+  text-decoration: none; }
+
+.bg-black-dark {
+  background-color: #000000 !important; }
+
+.text-black-dark {
+  color: #000000; }
+
+a.text-black-dark {
+  color: #000000;
+  text-decoration: none; }
+
+a.text-black-dark:hover {
+  color: #000000;
+  text-decoration: none; }
+
+.bg-red-normal {
+  background-color: #ff4040 !important; }
+
+.text-red-normal {
+  color: #ff4040; }
+
+a.text-red-normal {
+  color: #ff4040;
+  text-decoration: none; }
+
+a.text-red-normal:hover {
+  color: #ff4040;
+  text-decoration: none; }
+
+.bg-yellow-normal {
+  background-color: #ffcd3b !important; }
+
+.text-yellow-normal {
+  color: #ffcd3b; }
+
+a.text-yellow-normal {
+  color: #ffcd3b;
+  text-decoration: none; }
+
+a.text-yellow-normal:hover {
+  color: #ffcd3b;
+  text-decoration: none; }
+
+.bg-green-normal {
+  background-color: #07bc1b !important; }
+
+.text-green-normal {
+  color: #07bc1b; }
+
+a.text-green-normal {
+  color: #07bc1b;
+  text-decoration: none; }
+
+a.text-green-normal:hover {
+  color: #07bc1b;
+  text-decoration: none; }
+
+.bg-green-blackish {
+  background-color: #9ACC9B !important; }
+
+.text-green-blackish {
+  color: #9ACC9B; }
+
+a.text-green-blackish {
+  color: #9ACC9B;
+  text-decoration: none; }
+
+a.text-green-blackish:hover {
+  color: #9ACC9B;
+  text-decoration: none; }
+
+.bg-gray-dark {
+  background-color: #999999 !important; }
+
+.text-gray-dark {
+  color: #999999; }
+
+a.text-gray-dark {
+  color: #999999;
+  text-decoration: none; }
+
+a.text-gray-dark:hover {
+  color: #999999;
+  text-decoration: none; }
+
+/*# sourceMappingURL=kmjr.comm.color.css.map */

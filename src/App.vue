@@ -1,20 +1,18 @@
 <template>
-  <div id="app">
-    <tab></tab>
+  <div id="app" class="container">
+    <HeaderNormal></HeaderNormal>
     <router-view></router-view>
+    <CopyRight></CopyRight>
+    <NavNormal></NavNormal>
   </div>
 </template>
 
 <script>
-	import Tab from 'components/tab/tab'
+	import HeaderNormal from 'components/comm/HeaderNormal'
+	import NavNormal from 'components/comm/NavNormal'
+	import CopyRight from 'components/comm/copyright'
+
 	export default{
-		components:{
-			Tab
-		}
+	  components: {CopyRight, NavNormal, HeaderNormal}
 	}
-
 </script>
-
-<style lang="less">
-	
-</style>

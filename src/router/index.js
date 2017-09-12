@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from 'components/home/home'
 import List from 'components/list/list'
 import Recommend from 'components/recommend/recommend'
+import Project from 'components/project/wz'
 
 Vue.use(Router)
 export default new Router({
@@ -22,6 +23,10 @@ export default new Router({
     {
       path: '/recommend',
       component: Recommend
+    },
+    {
+      path: '/project/detail',
+      component: Project
     }
   ]
 })

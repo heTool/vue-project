@@ -58,6 +58,10 @@ module.exports = {
 				loader: "style-loader!css-loader!less-loader",
 			},
       {
+        test: /\.scss$/,
+        loader: "style-loader!css-loader!scss-loader",
+      },
+      {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
         options: {

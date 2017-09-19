@@ -1,9 +1,18 @@
 <template>
-	<div>我是列表</div>
+	<div>
+    <listAjb></listAjb>
+    <listWZ></listWZ>
+  </div>
 </template>
 
 <script>
-</script>
+  import ListAjb from 'components/list/listAjb'
+  import ListWZ from 'components/list/listWZ'
 
-<style>
-</style>
+  export default{
+    components: {
+      ListAjb,
+      ListWZ
+    }
+  }
+</script>

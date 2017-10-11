@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <transition name="slide">
     <div>
       <homeHeader></homeHeader>
@@ -29,3 +30,16 @@
   }
 </style>
 
+=======
+	<div>
+ home
+  </div>
+</template>
+
+<script>
+
+</script>
+
+<style>
+</style>
+>>>>>>> 7bbc5bc10a7ee7e66aaa2aea0be8285cd19ebb00

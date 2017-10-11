@@ -1,14 +1,26 @@
 <template>
+<<<<<<< HEAD
 	<div style="padding-bottom:3rem">
     <div class="list-head text-black-light">
       <div class="left">定期 · 稳赚计划</div>
     </div>
+=======
+	<div>
+    <div class="list-head text-black-light">
+      <div class="left">定期 · 稳赚计划</div>
+    </div>
+
+>>>>>>> 7bbc5bc10a7ee7e66aaa2aea0be8285cd19ebb00
     <div class="list-body">
       <a href="http://wap.renrenaijia.com/project/detail?id=9646">
         <div class="list-cell ">
           <div class="list-cell-tit text-h2">
             新人专享M8359                        <!--returnMoney/tags-->
           </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7bbc5bc10a7ee7e66aaa2aea0be8285cd19ebb00
           <div class="col col-8 list-cell-body">
             <div class="col-cell col-cell-3 text-indent-1em">
               <div class="text-red text-h1">12.0<span class="text-normal">%</span></div>
@@ -26,6 +38,7 @@
         </div>
       </a>
     </div>
+<<<<<<< HEAD
     <div class="list-cell mark-hot-sell">
       <div class="list-cell-tit text-h2">
         稳赚一月M9418                        <!--returnMoney/tags-->
@@ -87,16 +100,21 @@
       </div>
     </div>
     <copy-right></copy-right>
+=======
+>>>>>>> 7bbc5bc10a7ee7e66aaa2aea0be8285cd19ebb00
   </div>
 </template>
 
 <script>
+<<<<<<< HEAD
   import copyRight from 'components/comm/copyright'
   export default{
       components:{
         copyRight
       }
   }
+=======
+>>>>>>> 7bbc5bc10a7ee7e66aaa2aea0be8285cd19ebb00
 </script>
 
 <style>

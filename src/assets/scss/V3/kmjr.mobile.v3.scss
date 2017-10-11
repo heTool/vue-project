@@ -1,0 +1,196 @@
+@import "../scssMin/kmjr.comm.hacker";
+@import "../scssMin/kmjr.comm.reset";
+@import "../scssMin/kmjr.comm.color";
+@import "../scssMin/kmjr.comm.font.v3";
+
+/****/
+html{font-size:100%;line-height: 1.125;height:100%;min-height: 100%;display: block}
+body{font-family:'Microsoft YaHei',arial,helvetica,sans-serif; -webkit-text-size-adjust:none;color:$black-normal; background-color:$background;-webkit-text-size-adjust:none;min-width:320px;height:90%;min-height: 90%;font-size:100%;line-height: 1; display: block;}
+@media screen and(max-width: 340px) {
+  html{font-size: 87.5%}
+}
+*{transition: all .25s;-webkit-transition:all .25s;}
+i,em{ font-style: normal}
+
+.line-height-1_2{ line-height: 1.2}
+/**/
+.img-block{display: block}
+.text-white{color: $white-normal}
+.text-red{color: $red-normal}
+.text-blue{color: $blue-sky}
+.text-black{color: $black-dark}
+.text-black-light{color: $black-light}
+.text-orange{color:$orange-normal}
+.text-yellow{ color:$yellow-normal}
+.text-green{color:$green-normal}
+.text-gray{color: $gray-normal}
+.text-gray-light{color: $line-light}
+.text-gray-dark{ color: $gray-dark}
+.text-line-through{text-decoration: line-through}
+
+/**/
+a{text-decoration: none; color: $black-normal;}
+a.text-red{color: $red-normal}
+a.text-blue{color: $blue-sky}
+a.text-white{color: $white-normal}
+a.text-black{color: $black-dark}
+a.text-green{color: $green-normal}
+a.text-gray-dark{ color: $gray-dark}
+
+.text-indent-1em{text-indent: 1rem}
+.text-indent-2em{text-indent: 2rem}
+
+.bg-white{ background-color: $white-normal}
+.bg-red{ background-color: #fd525b}
+.bg-gray{background-color: $line-light}
+
+.padding-0_2_5rem{padding: .25rem}
+.padding-top-0_2_5rem{padding-top: .25rem}
+.padding-right-0_2_5rem{padding-right: .25rem}
+.padding-bottom-0_2_5rem{padding-bottom: .25rem}
+.padding-left-0_2_5erm{padding-left: .25rem}
+
+
+.padding-0_5rem{padding: .5rem}
+.padding-top-0_5rem{padding-top: .5rem}
+.padding-right-0_5rem{padding-right: .5rem}
+.padding-bottom-0_5rem{padding-bottom: .5rem}
+.padding-left-0_5erm{padding-left: .5rem}
+
+.margin-0_5rem{margin: .5rem}
+.margin-top-0_5rem{margin-top: .5rem}
+.margin-right-0_5rem{margin-right: .5rem}
+.margin-bottom-0_5rem{margin-bottom: .5rem}
+.margin-left-0_5rem{margin-left: .5rem}
+
+.padding-1rem{padding: 1rem}
+.padding-top-1rem{padding-top: 1rem}
+.padding-right-1rem{padding-right: 1rem}
+.padding-bottom-1rem{padding-bottom: 1rem}
+.padding-left-1rem{padding-left: 1rem}
+
+.margin-1rem{margin: 1rem}
+.margin-top-1rem{margin-top: 1rem}
+.margin-right-1rem{margin-right: 1rem}
+.margin-bottom-1rem{margin-bottom:1rem}
+.margin-left-1rem{margin-left: 1rem}
+
+.padding-2rem{padding: 2rem}
+.padding-top-2rem{padding-top: 2rem}
+.padding-right-2rem{padding-right: 2rem}
+.padding-bottom-2rem{padding-bottom: 2rem}
+.padding-left-2rem{padding-left: 2rem}
+
+.padding-top-pre75{ padding-top: 75% !important;}
+.padding-top-pre50{ padding-top: 50% !important;}
+.padding-top-pre25{ padding-top: 25% !important;}
+
+.border-left-dashed{ border-left:1px dashed $line-light}
+.border-right-dashed{ border-right:1px dashed $line-light}
+.border-top-dashed{ border-top:1px dashed $line-light}
+.border-bottom-dashed{ border-bottom:1px dashed $line-light}
+
+.border-left-solid{ border-left:1px solid $line-light;}
+.border-right-solid{ border-right:1px solid $line-light;}
+.border-top-solid{ border-top:1px solid $line-light;}
+.border-bottom-solid{ border-bottom:1px solid $line-light;}
+
+
+
+/****comm**/
+.after-clear-fixed{display: block;content: '';height: 0;width: 0; overflow: hidden; clear: both}
+.text-overflow{white-space: nowrap;word-break: keep-all; text-overflow: ellipsis; overflow: hidden; }
+
+/**/
+.container{ padding-top: 3rem; min-height: 100%; padding-bottom: 3rem; }
+.container-full{ padding-top: 3rem; height: 100%; min-height: 100%;}
+.header,.header-red{text-align: center;  position: fixed;width: 100%;height: 3rem; top: 0;left: 0; background-color: $white-normal;z-index: 9}
+.header-red{ background-color: $red-normal; }
+.header-red .nav{ border-bottom: 1px  solid $red-normal;}
+.body{}
+.container-full .body{ height: 100%; min-height: 100%; background-color: white;}
+.footer{text-align: center;}
+.footer.footer-bottom{ position: fixed; bottom: 0; padding: .5rem 5%; width: 90%; left: 0; background-color: $white-normal; border-top: 1px solid $line-light;z-index: 6}
+/*********/
+.list-set-height{ height: 2rem; overflow-y: hidden; @extend .text-nowarp;}
+.list-set-val{ letter-spacing: -.05rem}
+
+/****/
+.btn-block{padding: 1rem 0;display: block; width: 100%}
+
+.panel-slogan{ text-align: center; padding: 1rem 0; position: relative;}
+.panel-slogan-txt{ background-color:$red-banner; padding: 0 .5rem; position: relative; z-index: 1; @extend .text-normal-max;}
+.panel-slogan:before{ content: ''; border-top: 1px solid $white-normal; display: block; width: 70%;
+  position: absolute; top: 48%; left: 15%}
+.btn-login{ width: 50%; margin: 0 auto}
+.nav-avatar{ width: 1.875rem; height: 1.875rem; border-radius: 999rem; box-shadow: 0 0 0 .05rem $white-normal}
+/*****/
+.body-wz{ padding-bottom: 8rem}
+.body-idx{ padding-bottom: 4rem}
+/*****/
+.ls-bank-icon{ width: 1.5rem; margin-right:.5rem; }
+.ls-bank-cell{ display: inline-block; vertical-align:sub;}
+/******/
+.panel-login{ padding: 1rem 2rem}
+.panel-login input{}
+.pop-code{  box-shadow:0 0 1px $line-light; border-radius: .25rem;  @extend .text-tips; text-align: center; padding:.5rem;white-space: nowrap; word-break: keep-all; flex-grow: 10;margin-top: -.625rem; margin-bottom: -.625rem}
+.login-ipt-adapt{ width: 20%;}
+
+/*****/
+.list-rb,
+.list-rb-2{ display: flex !important; display: -webkit-flex !important; margin: 1rem 1rem 0 ; padding: 0; align-items: center; background-color: white; position: relative; overflow: hidden }
+.list-rb.mark-new:before,
+.list-rb.mark-hot:before,
+.list-rb.mark-expire:before{ position: absolute; left: 0; top: 0; width: 4.5rem; text-align: center; content: 'NEW'; color: $red-banner; background-color: white; transform: rotate(-45deg) translate(-1.125rem,-.25rem);-webkit-transform: rotate(-45deg) translate(-1.25rem,-.5rem); @extend .text-tips; padding:.125rem 0;}
+.list-rb.mark-hot:before{content: 'HOT';}
+.list-rb.mark-expire:before{content: '快过期';}
+.list-rb .rb-cell:first-child{ background-color: $red-banner; @extend .text-white; width: 32%; padding: 1.5rem 0; text-align: center; border-right: 1px dashed white; }
+.list-rb.mark-overdue .rb-cell:first-child,
+.list-rb.mark-used .rb-cell:first-child{ background-color: $gray-light;  border-color: $white-normal}
+.list-rb .rb-cell:nth-child(2){ width: 54%; padding-left: 2%;}
+.list-rb.mark-overdue .rb-cell:nth-child(2) h5,
+.list-rb.mark-used .rb-cell:nth-child(2) h5{ color: $gray-light}
+.list-rb.mark-overdue .rb-cell:nth-child(2) .text-gray,
+.list-rb.mark-used .rb-cell:nth-child(2) .text-gray{ color: $gray-light}
+.list-rb .rb-cell:last-child{width: 8%; border-left:1px dashed $line-light; word-break: break-all; white-space: pre-wrap; text-align: center; @extend .text-red; padding:.425rem 1%; line-height: 1.25;}
+.list-rb.mark-overdue .rb-cell:last-child,
+.list-rb.mark-used .rb-cell:last-child{ color: $gray-light; padding:1rem 1%; }
+
+.list-rb-2 .rb-cell:first-child{ background-color: $red-banner; @extend .text-white; width: 32%; padding: 1.5rem 0; text-align: center; border-right: 1px dashed white; }
+.list-rb-2.mark-used .rb-cell:first-child{ background-color:$gray-light; }
+.list-rb-2 .rb-cell:last-child{ width: 64%; padding-left: 2%; padding: 0 0 0 2%; }
+.list-rb-2.mark-used .rb-cell:last-child{ color: $gray-light; padding:1.875rem 1%; background: url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/mobile/home/w_tiyanjin_jxjishu@3x_pack.png') right top no-repeat; background-size: 35% }
+
+.wz-cell-corner{  position: relative;}
+.wz-cell-corner:after{content: ''; display: block; width: 0; height: 0; border-right: .25rem solid $red-normal; border-bottom:.25rem solid $red-normal; border-left: .25rem solid transparent; border-top:.25rem solid transparent; position: absolute; right: 8%; bottom: 1rem;}
+
+.home-cell{ min-height: 4.5rem}
+
+.chart-box{display: flex; display: -webkit-flex; align-items: center;-webkit-align-items: center;}
+.chart-cell{ width: 65%;}
+.chart-cell:first-child{ height: 8rem}
+.chart-cell:last-child{ width: 35%; line-height: 1.875}
+.legend-tit{@extend .text-black-light; @extend .text-tips;padding-right:1.5rem; position: relative}
+.legend-tit.arrow:after{ content: ''; display: block;width: .375rem; height: .375rem; border-top:1px solid $line-light; border-right: 1px solid $line-light; position: absolute; right: 1rem; top: 35%; transform: rotate(45deg); -webkit-transform: rotate(45deg);transition: all .5s; -webkit-transition: all .25s;}
+
+.panel-head.ph-new-user{ @extend .text-h2; position: relative; padding: 1.25rem 0;}
+.ph-new-user span{ position: relative;background-color: $white-normal; padding: 0 .5rem;}
+.ph-new-user:before{ content:''; display:block;position: absolute;width: 60%; border-bottom: 1px solid $gray-dark; left: 20%; top: 48%;}
+
+.download{position: fixed; width: 100%; left: 0; bottom:3rem; }
+.download span.close{ color: white; @extend .text-h1-top; position: fixed;  font-weight: 100; opacity: .75; display: block;width: 2.75rem; height: 4.25rem; line-height: 1; text-align: center; bottom: 3rem;right: 0; vertical-align: top;}
+
+
+/****fast slide***/
+.fast-slide{position: relative;height: 10.5rem; width: 100%; overflow: hidden}
+.fast-slide-img{ width:300%; height: 10.5rem; display: flex;display: -webkit-flex; flex-wrap: nowrap; transition: all .5s;-webkit-transition: all .5s;}
+.fast-slide-img img{width:33.33%;height: 10.5rem; }
+
+.fast-slide-step{position: absolute; width: 100%;height: .5rem; bottom: 1rem; display: flex;display: -webkit-flex; flex-wrap: nowrap;justify-content: center;-webkit-justify-content: center; }
+.fast-slide-step span{display: block; opacity: .5; width: .5rem;height: .5rem; text-align: center; overflow: hidden; color: white; border-radius: 999rem; background-color: white; margin:0 .125rem; transition: all .5s;-webkit-transition: all .5s;}
+.fast-slide-step span.active{ opacity: 1}
+
+.fast-slide-loading{ position: absolute; left: 0;top: 0; width: 100%; height: 10.5rem; text-align: center; line-height: 10rem; vertical-align: middle; background-color: white; color: $gray-normal; }
+
+/****loading UI**/
+@import "kmjr.mobile.ui.v3";

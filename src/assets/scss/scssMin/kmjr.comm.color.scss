@@ -1,0 +1,45 @@
+/*color*/
+$white-normal:#ffffff;
+$red-normal:#FF4D4D;
+$red-banner:#fd525b;
+$red-panel:#fa5558;
+$yellow-normal:#ffcd3b;
+$orange-normal:#FE5C1D;
+$green-normal:#07bc1b;
+$green-blackish:#9ACC9B;
+$blue-normal:#336699;
+$blue-sky:#0099e5;
+/*black*/
+$black-light:#666666;
+$black-normal:#333333;
+$black-dark:#000000;
+/*gray*/
+$gray-normal:#aaaaaa;
+$gray-light:#cccccc;
+$gray-dark:#999999;
+/*background-color&&line*/
+$line-light:#e6e6e6;
+$line:#d7d7d7;
+$background:#f5f5f5;
+$background-light:#f7f7f7;
+$background-red:$red-normal;
+
+/**/
+$color:(blue-normal:#336699,black-light:#666666,black-normal:#333333,black-dark:#000000,red-normal:#ff4040,yellow-normal:#ffcd3b,green-normal:#07bc1b,green-blackish:#9ACC9B,gray-dark:#999999);
+
+@each $getStyle,$getColor in $color{
+  .bg-#{$getStyle}{
+    background-color: $getColor !important;
+  };
+  .text-#{$getStyle}{
+    color:$getColor;
+  }
+  a.text-#{$getStyle}{
+    color:$getColor;
+    text-decoration: none;
+  }
+  a.text-#{$getStyle}:hover{
+    color:$getColor;
+    text-decoration: none;
+  }
+}

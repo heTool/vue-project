@@ -1,0 +1,53 @@
+@import "../scssMin/kmjr.comm.hacker";
+@import "../scssMin/kmjr.comm.reset";
+
+@import "kmjr.web.v3.comm";
+/******/
+.personal-nav{ border-top: 3px solid $clr-red-text; padding: 1em 0; background-color: $clr-white; margin-right: .5em}
+.personal-nav:after{@extend .clear-fixed;}
+.personal-nav-box{ border-bottom: 1px dashed $clr-gray-border;@extend .text-h2;}
+.personal-nav-box:last-child{ border-bottom: 0}
+.personal-head{ padding: 2em 1em 2em 2em; }
+.personal-head .iconfont{ color: $clr-gray-text; float: right; }
+.personal-head.active,
+.personal-head.active a{ @extend .text-danger}
+.personal-nav-list{ background-color: $clr-gray-border; height: 0;  overflow: hidden; }
+.personal-nav-list.active{ height: inherit;overflow:inherit; margin-top: -1.5rem;}
+.personal-nav-list li{padding:.75em 0 .75em 3em; @extend .text-normal-max}
+.personal-nav-list li.active,
+.personal-nav-list li.active a{@extend .text-danger}
+
+/******/
+.avatar{ width: 48px; height: 48px; border-radius: 999px;border: 3px solid #fff; box-shadow: 2px 2px  5px $clr-gray-text-light}
+.coupon{ background-color: #fff8f8;width: 90%; margin: 1em auto;  }
+.coupon:after{@extend .clear-fixed;}
+.coupon-val{width: 38%; height: 100%; float: left; text-align: center;font-size:24px;  padding: 1.5em 0;color: $clr-white; background-color:$clr-red-normal;background-image: url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/web/personal/red_new.png'); background-position: left top; background-repeat: no-repeat; background-size:42px 42px; }
+.coupon-val .val{font-size: 38px;}
+.coupon.new .coupon-val{ background-image: url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/web/personal/red_new.png'); }
+.coupon.used .coupon-val{ background-image: url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/web/personal/red_used.png'); background-color: #bebebe}
+.coupon.overdue .coupon-val{ background-image: url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/web/personal/red_overdue.png'); background-color: #bebebe}
+.coupon.tyj .coupon-val,
+.coupon.tyj-overdue .coupon-val{ background-image: none}
+.coupon.tyj-overdue .coupon-val{ background-color: #bebebe;}
+.coupon.tyj .coupon-val .val,
+.coupon.tyj-overdue .coupon-val .val{ font-size: 26px;}
+.coupon.tyj .coupon-val,
+.coupon.tyj-overdue .coupon-val{ padding:1.75em 0;}
+.coupon-info{ width: 57%; height: 100px; float: left; padding: 1em 0; padding-left: 5%;background: url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/web/personal/red_line.png') left top repeat-y; }
+.coupon.used,
+.coupon.overdue,
+.coupon.tyj-overdue{ background-color: $clr-gray-bg}
+.coupon.used .coupon-info,
+.coupon.overdue .coupon-info{ background: url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/web/personal/red_line_gray.png') left top repeat-y;}
+.coupon.tyj .coupon-info,
+.coupon.tyj-overdue .coupon-info{ position: relative;background-image: url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/web/personal/red_line_gray.png'); }
+.coupon.tyj .coupon-info:after,
+.coupon.tyj-overdue .coupon-info:before,
+.coupon.tyj-overdue .coupon-info:after{content:'';display: block;width: 100%; height: 100%;position: absolute; top:0; right:0;background: url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/web/personal/red_bg.png') right bottom no-repeat; }
+.coupon.tyj-overdue .coupon-info:before{ background-image:url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/web/personal/red_bg_gray.png');}
+.coupon.tyj-overdue .coupon-info:after{ background-position: right top;background-image:url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/web/personal/red_tyj_overdue.png');}
+
+.chart-cell{height: 300px; width: 68%; float: left}
+.cell-val{height: 200px; width: 32%; float: right; vertical-align: middle; padding-top: 115px;}
+.cell-val.cell-val-2{ padding-top: 126px;}
+.val-items{ display: inline-block; width: 95%; font-size: 14px; line-height: 1.75em; padding-left:5%;}

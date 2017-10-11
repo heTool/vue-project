@@ -1,0 +1,104 @@
+/*margin*/
+/**/
+@for $i from 1 to 11 {
+  @if $i/2==0.5{
+    .margin-left-0_5em{
+      margin-left:#{$i/2}em;
+    };
+    .margin-right-0_5em{
+      margin-right:#{$i/2}em;
+    };
+    .margin-top-0_5em{
+      margin-top:#{$i/2}em;
+    };
+    .margin-bottom-0_5em{
+      margin-bottom:#{$i/2}em;
+    };
+  }
+  @else if $i/2==1.5 {
+    .margin-left-1_5em{
+      margin-left:#{$i/2}em;
+    };
+    .margin-right-1_5em{
+      margin-right:#{$i/2}em;
+    };
+    .margin-top-1_5em{
+      margin-top:#{$i/2}em;
+    };
+    .margin-bottom-1_5em{
+      margin-bottom:#{$i/2}em;
+    };
+  }
+  @else if $i/2==2.5 {
+    .margin-left-2_5em{
+      margin-left:#{$i/2}em;
+    };
+    .margin-right-2_5em{
+      margin-right:#{$i/2}em;
+    };
+    .margin-top-2_5em{
+      margin-top:#{$i/2}em;
+    };
+    .margin-bottom-2_5em{
+      margin-bottom:#{$i/2}em;
+    };
+  }
+  @else if $i/2==3.5 {
+    .margin-left-3_5em{
+      margin-left:#{$i/2}em;
+    };
+    .margin-right-3_5em{
+      margin-right:#{$i/2}em;
+    };
+    .margin-top-3_5em{
+      margin-top:#{$i/2}em;
+    };
+    .margin-bottom-3_5em{
+      margin-bottom:#{$i/2}em;
+    };
+  }
+  @else if $i/2==4.5 {
+    .margin-left-4_5em{
+      margin-left:#{$i/2}em;
+    };
+    .margin-right-4_5em{
+      margin-right:#{$i/2}em;
+    };
+    .margin-top-4_5em{
+      margin-top:#{$i/2}em;
+    };
+    .margin-bottom-4_5em{
+      margin-bottom:#{$i/2}em;
+    };
+  }
+  @else{
+    .margin-left-#{$i/2}em{
+      margin-left:#{$i/2}em;
+    };
+    .margin-right-#{$i/2}em{
+      margin-right:#{$i/2}em;
+    };
+    .margin-top-#{$i/2}em{
+      margin-top:#{$i/2}em;
+    };
+    .margin-bottom-#{$i/2}em{
+      margin-bottom:#{$i/2}em;
+    };
+  }
+}
+
+/**/
+@for $i from 1 to 21 {
+  .margin-left-#{$i}{
+    margin-left:#{$i}px;
+  };
+  .margin-right-#{$i}{
+    margin-right:#{$i}px;
+  };
+  .margin-top-#{$i}{
+    margin-top:#{$i}px;
+  };
+  .margin-bottom-#{$i}{
+    margin-bottom:#{$i}px;
+  };
+}

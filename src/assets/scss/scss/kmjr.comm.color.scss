@@ -1,0 +1,48 @@
+/*color*/
+$white:#ffffff;
+$black:#333333;
+$darkblack:#000000;
+$gray:#999999;
+$darkgray:#666666;
+$lightgray:#f2f2f2;
+$bordergray:#dddddd;
+$orange:#FC7E4C;
+$yellow:#FEF492;
+$red:#ff705e;
+$lightRed:#ff2020;
+$darkRed:darken($red,20%);
+$barGray:#c6c2bd;
+$green:#00cc33;
+$blue:#0281C1;
+
+/**/
+$color:(white:#ffffff,
+        black:#333333,
+        darkblack:#000000,
+        gray:#999999,
+        darkgray:#666666,
+        lightgray:#f2f2f2,
+        yellow:#FEF492,
+        red:#ff705e,
+        green:#00cc33,
+        orange:#FC7E4C,
+        blue:#0281C1);
+
+@each $getStyle,$getColor in $color{
+    .bg-#{$getStyle}{
+      background-color: $getColor !important;
+    };
+    .text-#{$getStyle}{
+      color:$getColor;
+    }
+    a.text-#{$getStyle}{
+      color:$getColor;
+      text-decoration: none;
+    }
+    a.text-#{$getStyle}:hover{
+      color:$getColor;
+      text-decoration: none;
+    }
+}
+
+

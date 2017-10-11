@@ -1,0 +1,72 @@
+/*
+Error: Invalid GBK character "\xE9"
+        on line 38 of kmjr.web.v3.comm.scss
+        from line 4 of kmjr.web.login.v3.scss
+
+33: html{font-size:14px;line-height: 1.125;height:100%;min-height: 100%;display: block}
+34: body{font-family:'Microsoft YaHei',arial,helvetica,sans-serif; -webkit-text-size-adjust:none;color:$clr-black-text; -webkit-text-size-adjust:none;min-width:1170px;font-size:100%;line-height: 1; display: block;}
+35: 
+36: *{transition: all .25s;-webkit-transition:all .25s;}
+37: i,em{ font-style: normal}
+38: .icon-svg{ width: 3em; height: 3em; /* 通过设置 font-size 来改变图标大小 *\/
+39:   /* 图标和文字相邻时，垂直对齐 *\/
+40:   vertical-align: -0.15em;
+41:   /* 通过设置 color 来改变 SVG 的颜色/fill *\/
+42:   fill: currentColor;
+43:   /* path 和 stroke 溢出 viewBox 部分在 IE 下会显示
+
+Backtrace:
+kmjr.web.v3.comm.scss:38
+kmjr.web.login.v3.scss:4
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/util.rb:1325:in `rescue in block in find_encoding_error'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/util.rb:1322:in `block in find_encoding_error'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/util.rb:1321:in `each'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/util.rb:1321:in `each_with_index'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/util.rb:1321:in `find_encoding_error'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/util.rb:930:in `check_sass_encoding'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/engine.rb:436:in `check_encoding!'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/engine.rb:392:in `_to_tree'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/engine.rb:312:in `to_tree'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/bin/scss:13:in `<top (required)>'
+C:/Ruby23/bin/scss:22:in `load'
+C:/Ruby23/bin/scss:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid GBK character \"\xE9\"\A         on line 38 of kmjr.web.v3.comm.scss\A         from line 4 of kmjr.web.login.v3.scss\A \A 33: html{font-size:14px;line-height: 1.125;height:100%;min-height: 100%;display: block}\A 34: body{font-family:'Microsoft YaHei',arial,helvetica,sans-serif; -webkit-text-size-adjust:none;color:$clr-black-text; -webkit-text-size-adjust:none;min-width:1170px;font-size:100%;line-height: 1; display: block;}\A 35: \A 36: *{transition: all .25s;-webkit-transition:all .25s;}\A 37: i,em{ font-style: normal}\A 38: .icon-svg{ width: 3em; height: 3em; /* 通过设置 font-size 来改变图标大小 */\A 39:   /* 图标和文字相邻时，垂直对齐 */\A 40:   vertical-align: -0.15em;\A 41:   /* 通过设置 color 来改变 SVG 的颜色/fill */\A 42:   fill: currentColor;\A 43:   /* path 和 stroke 溢出 viewBox 部分在 IE 下会显示"; }

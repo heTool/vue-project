@@ -1,0 +1,32 @@
+@import "../scssMin/kmjr.comm.hacker";
+@import "../scssMin/kmjr.comm.reset";
+
+@import "kmjr.web.v3.comm";
+
+.warp-login{background: url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/web/login/login_box_bg.jpg')  top center no-repeat;background-size: cover; height: 480px; }
+.container-login{background: url('http://cdn.renrenaijia.com/CDN/app/Public/images/kmjrAppV3/web/login/login_box_bg.jpg')  top center no-repeat;background-size: cover; height: 480px; }
+.form-cell-login{}
+.form-cell-login .form-control{ width: 100%}
+.form-cell-login .btn-control{ position: absolute; right: .5em; top: .5em; width: 53%;padding: 1em 0; border:1px solid #f0f0f0; border-radius: .25em; height: 44px; overflow: hidden; vertical-align: middle; height: 44px\9;}
+.form-cell-login .btn-control.btn-control-danger{ background-color: $clr-red-hover-turn; color: $clr-white;}
+.form-control.form-control-narrow{ width: 42%}
+.form-cell-login.form-cell-reg .form-control-narrow{ width: 30%; }
+.form-cell-login.form-cell-reg .btn-control{ width: 38%; right: 1em}
+.form-cell-reg .btn{ width: 70%; float: right; margin-right: .5rem}
+
+.reg-step{ background-color: $clr-gray-text-light; height: 8px; width: 60%; margin:50px auto 0; border-radius: 999em; position: relative; }
+.reg-step:after{@extend .clear-fixed;}
+.reg-step .cell{ width: 33.33%;  float: left; text-align: center; height: 8px; border-radius: 999rem;color: $clr-gray-black;}
+.reg-step .cell.active{ background-color: $clr-red-text; color: $clr-red-text;}
+.cell-pop{ border-radius: 999px; background-color: $clr-gray-text-light; color: $clr-white; display: block; width: 28px; height: 28px; line-height: 28px; margin: 0 auto; position: relative; top: -10px;}
+.reg-step .cell.active .cell-pop{ background-color: $clr-red-text;}
+
+.card-box{ border:1px solid $clr-red-hover;width: 230px; padding: 5px 10px; margin-left:4.75em}
+.card-box.disable{ border:1px solid $clr-gray-text-light;}
+.card-box.disable img{  -webkit-filter: grayscale(100%);  -moz-filter: grayscale(100%);  -ms-filter: grayscale(100%);  -o-filter: grayscale(100%);  filter: grayscale(100%);  filter: gray;}
+.card-box:after{ @extend .clear-fixed}
+.card-icon{ display: inline-block; float: left; width: 30px; height: 30px;}
+.card-name{ display: inline-block; float: left; width: 100px; padding:8px 10px 0;@extend .text-normal-max;}
+.card-info{ display: inline-block; float: left;  width: 60px;padding:10px 10px 0;@extend .text-help; text-align: center;}
+/*****/
+@import "../extra/sweetalert";

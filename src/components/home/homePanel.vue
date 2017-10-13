@@ -4,7 +4,7 @@
       <!--提现/充值-->
       <div class="panel-body col col-2 text-center bg-white border-bottom-solid text-normal-max">
         <div class="col-cell border-right-solid box-sizing-border">
-          <a href="http://wap.renrenaijia.com/balance/recharge" class="btn-block">充值</a>
+          <a class="btn-block">充值</a>
         </div>
         <div class="col-cell">
           <a href="http://wap.renrenaijia.com/balance/withdraw" class="btn-block">提现</a>
@@ -120,5 +120,22 @@
   </div>
 </template>
 <script>
-
+  import {getHomeData} from '../../api/listApi'
+  export default{
+      data(){
+        return{
+            homeData:[]
+        }
+      },
+      created(){
+        this._getData();
+      },
+    methods: {
+      _getData(){
+          getHomeData().then((res)=>{
+            console.log(res.data);
+          })
+      }
+    }
+  }
 </script>

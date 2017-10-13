@@ -1,0 +1,20 @@
+{
+  "list":[
+    {
+      "todayrate":"6.4%",
+      "time":"16:00",
+      "newrate":"12.0%",
+      "newday":"15",
+      "overplus":"152,399"
+    },{
+      "id":"1",
+      "oneMonthrate":"10.8%",
+      "earn":"200",
+      "oneday":"33",
+      "oneoverplus":"726,100"
+
+    }
+
+
+  ]
+}

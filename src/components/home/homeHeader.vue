@@ -29,8 +29,19 @@
   </div>
 </template>
 <script>
-  export default{
+  import {getRecommendData} from '../../api/recommendApi'
 
+  export default{
+    data(){
+      return{
+
+      }
+    },
+    created(){
+      getRecommendData().then((res)=>{
+          console.log(res);
+      })
+    }
   }
 </script>
 

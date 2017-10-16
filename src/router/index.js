@@ -6,8 +6,8 @@ import List from 'components/list/list';
 import Recommend from 'components/recommend/recommend';
 import Project from 'components/project/wz';
 import Login from 'components/login/login';
-import Register from 'components/register/register'
-
+import Register from 'components/register/register';
+import listChildren from 'components/list/listChildren';
 
 
 
@@ -26,7 +26,13 @@ export default new Router({
     },
     {
       path: '/list',
-      component: List
+      component: List,
+      children:[
+        {
+          path:':id',
+          component:listChildren
+        }
+      ]
     },
     {
       path: '/recommend',
@@ -35,7 +41,6 @@ export default new Router({
     {
       path: '/project/detail',
       component: Project
-
     },
     {
       path:'/login',
@@ -43,6 +48,9 @@ export default new Router({
     },{
       path:'/register',
       component:Register
+    },{
+      path:'/listChildren',
+      component:listChildren
     }
   ]
 });

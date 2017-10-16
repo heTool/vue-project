@@ -13,7 +13,8 @@
               注册
             </router-link>
 
-          </div>        </nav>
+          </div>
+        </nav>
       </header>
       <!--header-->
 
@@ -52,7 +53,6 @@
   export default{
     data(){
       return{
-
       }
     },
     methods:{

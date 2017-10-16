@@ -3,7 +3,7 @@
   <transition name="slide">
     <div>
       <homeHeader></homeHeader>
-      <homePanel></homePanel>
+      <home-content></home-content>
     </div>
   </transition>
 
@@ -12,11 +12,11 @@
 
 <script>
   import homeHeader from 'components/home/homeHeader'
-  import homePanel from 'components/home/homePanel'
+  import homeContent from 'components/home/homeContent'
   export default{
     components:{
       homeHeader,
-      homePanel
+      homeContent,
     }
   }
 </script>

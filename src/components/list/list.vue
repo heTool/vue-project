@@ -1,12 +1,15 @@
 <template>
 
-	<transition name="slide">
-    <div>
-      <listAjb></listAjb>
-      <listWZ></listWZ>
-    </div>
+    <transition name="slide">
 
-  </transition>
+        <div>
+          <listAjb ></listAjb>
+          <listWZ @select="selectLi"></listWZ>
+          <router-view></router-view>
+        </div>
+    </transition>
+
+
 
 
 </template>
@@ -16,6 +19,14 @@
   import ListWZ from 'components/list/listWZ'
 
   export default{
+
+    methods:{
+      selectLi(productList){
+          this.$router.push({
+            path:`/list/${productList.projectId}`
+          })
+      }
+    },
     components: {
       ListAjb,
       ListWZ

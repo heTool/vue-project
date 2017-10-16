@@ -122,19 +122,19 @@
 <script>
   import {getHomeData} from '../../api/listApi'
   export default{
-      data(){
-        return{
-            homeData:[]
-        }
-      },
-      created(){
-        this._getData();
-      },
+    data(){
+      return{
+        homeData:[]
+      }
+    },
+    created(){
+      this._getData();
+    },
     methods: {
       _getData(){
-          getHomeData().then((res)=>{
-            console.log(res.data);
-          })
+        getHomeData().then((res)=>{
+          console.log(res.data);
+        })
       }
     }
   }

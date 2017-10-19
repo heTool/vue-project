@@ -4,9 +4,11 @@ import Home from 'components/home/home'
 import List from 'components/list/list'
 import Recommend from 'components/recommend/recommend'
 import Project from 'components/project/wz'
+import AjbIndex from 'components/ajb/index'
 
 Vue.use(Router)
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -27,6 +29,10 @@ export default new Router({
     {
       path: '/project/detail',
       component: Project
+    },
+    {
+      path: '/aijiabao/index',
+      component: AjbIndex
     }
   ]
 })

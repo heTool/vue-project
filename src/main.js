@@ -4,6 +4,12 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import Axios from 'axios'
+
+Vue.prototype.$ajax = Axios
+
+//Vue.use(Axios)
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

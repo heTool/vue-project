@@ -1,8 +1,9 @@
 <template>
-  <div class="list-body">
-    <a href="http://wap.renrenaijia.com/aijiabao/index">
+  <div class="list-body" id="list-ajb">
+    <!--<a href="http://wap.renrenaijia.com/aijiabao/index">-->
+      <router-link tag="a"  to="/aijiabao/index">
       <div class="list-cell">
-        <div class="list-cell-tit text-h2">灵活理财 · 爱家宝</div>
+        <div class="list-cell-tit text-h2" v-on:click="greet">灵活理财 · 爱家宝</div>
         <div class="col col-8 list-cell-body">
           <div class="col-cell col-cell-3 text-indent-1em">
             <div class="text-red text-h1">6.4<span class="text-normal">%</span></div>
@@ -18,29 +19,33 @@
           </div>
         </div>
       </div>
-    </a>
+      </router-link>
+    <!--</a>-->
   </div>
 </template>
 
 <script>
+  /* eslint-disable quotes,space-before-function-paren,spaced-comment */
+
   export default {
-    data () {
+    name: "listAjb",
+    data: function() {
       return {
-        loading: false,
-        post: null,
-        error: null
+        name: 'test vue.js'
       }
     },
-    created () {
-      this.fetchData()
-    },
-    watch: {},
+    // 在 `methods` 对象中定义方法
     methods: {
-      fetchData () {
-        
+      greet: function (event) {
+        // `this` 在方法里指当前 Vue 实例
+        //alert('Hello ' + this.name + '!')
+        // `event` 是原生 DOM 事件
+        if (event) {
+          alert(event.target.tagName)
+        }
       }
     }
 
   }
-
 </script>
+

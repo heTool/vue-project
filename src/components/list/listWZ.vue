@@ -5,7 +5,9 @@
     </div>
 
     <div class="list-body">
-      <a href="http://wap.renrenaijia.com/project/detail?id=9646">
+      <!--<a href="http://wap.renrenaijia.com/project/detail?id=9646">-->
+
+        <router-link tag="a"  to="/project/detail?id=9646">
         <div class="list-cell ">
           <div class="list-cell-tit text-h2">
             新人专享M8359                        <!--returnMoney/tags-->
@@ -26,12 +28,15 @@
             </div>
           </div>
         </div>
-      </a>
+        </router-link>
+      <!--</a>-->
     </div>
   </div>
 </template>
 
 <script>
+  //
+
 </script>
 
 <style>

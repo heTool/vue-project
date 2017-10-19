@@ -17,3 +17,29 @@
   </div>
 </div>
 </template>
+
+
+<script>
+  export default{
+    created: function () {
+      return this.getDetailData()
+    },
+    data: function () {
+      return {
+        getDspData: []
+      }
+    },
+    methods: {
+      getDetailData: function () {
+        var self = this
+        return self.$ajax.get('http://192.168.10.198:18080/api/index')
+            .then(function (response) {
+              self.getDspData = response.data
+            })
+            .catch(function (error) {
+              self.fectError = error
+            })
+      }
+    }
+  }
+</script>

@@ -1,17 +1,11 @@
 <template>
-
     <transition name="slide">
-
         <div>
           <listAjb ></listAjb>
           <listWZ @select="selectLi"></listWZ>
           <router-view></router-view>
         </div>
     </transition>
-
-
-
-
 </template>
 
 <script>
@@ -23,7 +17,7 @@
     methods:{
       selectLi(productList){
           this.$router.push({
-            path:`/list/${productList.projectId}`
+            path: `/list/${productList.projectId}`
           })
       }
     },
@@ -32,7 +26,6 @@
       ListWZ
     }
   }
-
 
 </script>
 

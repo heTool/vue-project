@@ -32,13 +32,13 @@
     methods: {
       getDetailData: function () {
         var self = this
-        return self.$ajax.get('http://192.168.10.198:18080/api/index')
-            .then(function (response) {
-              self.getDspData = response.data
-            })
-            .catch(function (error) {
-              self.fectError = error
-            })
+//        return self.$ajax.get('http://192.168.10.198:18080/api/index')
+//            .then(function (response) {
+//              self.getDspData = response.data
+//            })
+//            .catch(function (error) {
+//              self.fectError = error
+//            })
       }
     }
   }

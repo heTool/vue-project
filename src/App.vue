@@ -9,8 +9,6 @@
 <script>
 	import HeaderNormal from 'components/comm/HeaderNormal'
 	import NavNormal from 'components/comm/NavNormal'
-
-
 	export default{
 	  components: { NavNormal, HeaderNormal}
 	}

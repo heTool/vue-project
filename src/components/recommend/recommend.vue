@@ -12,8 +12,22 @@
 <script>
   import {getRecommendData} from '../../api/recommendApi'
   import NewUserTask from 'components/recommend/NewUserTask'
+  import TopSlider from 'components/recommend/topSlider'
+  import CountData from 'components/recommend/countData'
+  import ProdAjb from 'components/recommend/prodAjb'
+  import ProdWz from 'components/recommend/prodWz'
+  import DownBar from 'components/recommend/downBar'
+
   export default{
-    data(){
+    components: {
+      NewUserTask,
+      TopSlider,
+      CountData,
+      ProdAjb,
+      ProdWz,
+      DownBar
+    },
+    data () {
       return {
         recommendObj:{}
       }
@@ -23,9 +37,6 @@
           this.recommendObj=res.data.data;
           console.log(res.data.data);
       })
-    },
-    components: {
-      NewUserTask
     }
   }
 </script>

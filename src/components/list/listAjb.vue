@@ -1,4 +1,5 @@
 <template>
+
   <router-link to="/listChildren">
     <div class="list-body">
       <a href="http://wap.renrenaijia.com/aijiabao/index">
@@ -26,8 +27,10 @@
 
 <script>
   import {getListData} from '../../api/listApi'
+
   export default {
-    data () {
+    name: "listAjb",
+    data: function() {
       return {
         licaiList:{}
       }
@@ -47,9 +50,5 @@
     }
 
   }
-
 </script>
-<style lang="less">
 
-
-</style>

@@ -1,0 +1,45 @@
+/*
+Error: Invalid GBK character "\xE5"
+        on line 146 of kmjr.mobile.v3.scss
+
+141: .list-rb-2{ display: flex !important; display: -webkit-flex !important; margin: 1rem 1rem 0 ; padding: 0; align-items: center; background-color: white; position: relative; overflow: hidden }
+142: .list-rb.mark-new:before,
+143: .list-rb.mark-hot:before,
+144: .list-rb.mark-expire:before{ position: absolute; left: 0; top: 0; width: 4.5rem; text-align: center; content: 'NEW'; color: $red-banner; background-color: white; transform: rotate(-45deg) translate(-1.125rem,-.25rem);-webkit-transform: rotate(-45deg) translate(-1.25rem,-.5rem); @extend .text-tips; padding:.125rem 0;}
+145: .list-rb.mark-hot:before{content: 'HOT';}
+146: .list-rb.mark-expire:before{content: '快过期';}
+147: .list-rb .rb-cell:first-child{ background-color: $red-banner; @extend .text-white; width: 32%; padding: 1.5rem 0; text-align: center; border-right: 1px dashed white; }
+148: .list-rb.mark-overdue .rb-cell:first-child,
+149: .list-rb.mark-used .rb-cell:first-child{ background-color: $gray-light;  border-color: $white-normal}
+150: .list-rb .rb-cell:nth-child(2){ width: 54%; padding-left: 2%;}
+151: .list-rb.mark-overdue .rb-cell:nth-child(2) h5,
+
+Backtrace:
+kmjr.mobile.v3.scss:146
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/util.rb:1325:in `rescue in block in find_encoding_error'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/util.rb:1322:in `block in find_encoding_error'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/util.rb:1321:in `each'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/util.rb:1321:in `each_with_index'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/util.rb:1321:in `find_encoding_error'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/util.rb:930:in `check_sass_encoding'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/engine.rb:436:in `check_encoding!'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/engine.rb:392:in `_to_tree'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/bin/scss:13:in `<top (required)>'
+C:/Ruby23/bin/scss:22:in `load'
+C:/Ruby23/bin/scss:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid GBK character \"\xE5\"\A         on line 146 of kmjr.mobile.v3.scss\A \A 141: .list-rb-2{ display: flex !important; display: -webkit-flex !important; margin: 1rem 1rem 0 ; padding: 0; align-items: center; background-color: white; position: relative; overflow: hidden }\A 142: .list-rb.mark-new:before,\A 143: .list-rb.mark-hot:before,\A 144: .list-rb.mark-expire:before{ position: absolute; left: 0; top: 0; width: 4.5rem; text-align: center; content: 'NEW'; color: $red-banner; background-color: white; transform: rotate(-45deg) translate(-1.125rem,-.25rem);-webkit-transform: rotate(-45deg) translate(-1.25rem,-.5rem); @extend .text-tips; padding:.125rem 0;}\A 145: .list-rb.mark-hot:before{content: 'HOT';}\A 146: .list-rb.mark-expire:before{content: '快过期';}\A 147: .list-rb .rb-cell:first-child{ background-color: $red-banner; @extend .text-white; width: 32%; padding: 1.5rem 0; text-align: center; border-right: 1px dashed white; }\A 148: .list-rb.mark-overdue .rb-cell:first-child,\A 149: .list-rb.mark-used .rb-cell:first-child{ background-color: $gray-light;  border-color: $white-normal}\A 150: .list-rb .rb-cell:nth-child(2){ width: 54%; padding-left: 2%;}\A 151: .list-rb.mark-overdue .rb-cell:nth-child(2) h5,"; }

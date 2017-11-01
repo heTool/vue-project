@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
 
   <transition name="slide">
     <div>
@@ -70,13 +71,41 @@
   </transition>
 
 
+=======
+	<div>
+    <TopSlider></TopSlider>
+    <CountData></CountData>
+    <NewUserTask></NewUserTask>
+    <ProdAjb></ProdAjb>
+    <ProdWz></ProdWz>
+    <DownBar></DownBar>
+	</div>
+>>>>>>> 8fa1a95cf0db349345726b562f5ce0844e72b571
 </template>
 
 <script>
   import {getRecommendData} from '../../api/recommendApi'
+<<<<<<< HEAD
   import Loading from 'components/loading/loading'
+=======
+  import NewUserTask from 'components/recommend/NewUserTask'
+  import TopSlider from 'components/recommend/topSlider'
+  import CountData from 'components/recommend/countData'
+  import ProdAjb from 'components/recommend/prodAjb'
+  import ProdWz from 'components/recommend/prodWz'
+  import DownBar from 'components/recommend/downBar'
+
+>>>>>>> 8fa1a95cf0db349345726b562f5ce0844e72b571
   export default{
-    data(){
+    components: {
+      NewUserTask,
+      TopSlider,
+      CountData,
+      ProdAjb,
+      ProdWz,
+      DownBar
+    },
+    data () {
       return {
         recommendObj:{},
         itemList:[],
@@ -86,6 +115,7 @@
       }
     },
     created(){
+<<<<<<< HEAD
           getRecommendData().then((res)=>{
             this.recommendObj=res.data.data;
             this.itemList=res.data.data.recommend.data;
@@ -101,10 +131,17 @@
     },
     components: {
       Loading
+=======
+      getRecommendData().then((res)=>{
+          this.recommendObj=res.data.data;
+          console.log(res.data.data);
+      })
+>>>>>>> 8fa1a95cf0db349345726b562f5ce0844e72b571
     }
   }
 </script>
 
+<<<<<<< HEAD
 
 <style lang="less">
   .slide-enter-active , .slide-leave-active{
@@ -129,3 +166,5 @@
     height:8rem;
   }
 </style>
+=======
+>>>>>>> 8fa1a95cf0db349345726b562f5ce0844e72b571

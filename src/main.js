@@ -7,7 +7,7 @@ import 'mint-ui/lib/style.css';
 import App from './App';
 import router from './router';
 //import './mock';
-import Axios from 'axios';
+//import Axios from 'axios';
 // 带配置的Axios
 /*Vue.prototype.$axios = Axios.create({
   baseURL: 'http://localhost:8000/'
@@ -15,9 +15,9 @@ import Axios from 'axios';
 Vue.use(MintUI);
 
 //axios.defaults.baseURL = '/api';
-import axios from 'axios';
-Vue.config.productionTip = false;
+//Vue.use(Axios)
 
+Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({

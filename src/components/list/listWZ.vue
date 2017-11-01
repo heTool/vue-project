@@ -5,8 +5,7 @@
       <div class="left">定期 · 稳赚计划</div>
     </div>
     <div class="list-body">
-
-        <div class="list-cell" v-for="item in productList" :class="item.hotWordsType!=0? 'mark-hot-sell' :'' " @click="selectItem(item)">
+        <div class="list-cell" v-for="item in productList" :class="item.hotWordsType!=0? 'mark-hot-sell' :'' " @click="select(item.projectId)">
           <div class="list-cell-tit text-h2">
             {{item.projectName}}                      <!--returnMoney/tags-->
             <span class="pop pop-circle pop-circle-red pop-min" v-show="item.returnMoney">{{item.returnMoney}}</span>
@@ -44,20 +43,19 @@
 
       return{
         productList:[],
-
       }
     },
     created(){
       setTimeout(()=>{
         getListData().then((res)=>{
           this.productList=res.data.data.listProject;
-          console.log(res);
+          //console.log(res);
         })
       },300)
     },
     methods:{
-      selectItem(item){
-          this.$emit('select',item);
+      select(id){
+          this.$router.push(`/list/${id}`)// 动态路由跳转
       }
     },
       components:{
@@ -70,7 +68,6 @@
 
 <style lang="less">
   .loading-container{
-
     width:100%;
     height:100%;
     position: fixed;

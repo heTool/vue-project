@@ -10,36 +10,33 @@
       </nav>
     </header>
     <!--header-->
-
     <!---content-->
     <div class="body body-wz" style="padding-bottom:3.6rem;">
       <div class="panel panel-red">
         <!---info-->
         <div class="panel-body text-center padding-top-2rem padding-bottom-1rem">
           <div class="text-normal text-gray-light">今日预期年化</div>
-          <div class="text-h1-max line-height-1_5 profit-val" data-profit="0.063">6.3%</div>
+          <div class="text-h1-max line-height-1_5 profit-val" data-profit="0.063">{{listDetail.yearrate}}%</div>
           <div class="col col-3 padding-top-2rem">
             <div class="col-cell">
-              <div class="text-normal-max">100元</div>
+              <div class="text-normal-max">{{listDetail.minInvestMoney}}元</div>
               <div class="text-normal-min padding-top-0_5rem text-gray-light">起投金额</div>
             </div>
             <div class="col-cell">
-              <div class="text-normal-max">灵活存取</div>
+              <div class="text-normal-max">{{listDetail.repayWay}}</div>
               <div class="text-normal-min padding-top-0_5rem text-gray-light">当日起息</div>
             </div>
             <div class="col-cell">
-              <div class="text-normal-max">1,597,348元</div>
+              <div class="text-normal-max">{{listDetail.collectEndInterval | filterA}}</div>
               <div class="text-normal-min padding-top-0_5rem text-gray-light">本轮剩余额度</div>
             </div>
           </div>
         </div>
       </div>
-
-      <!----->
       <div class="panel">
         <div class="panel-head border-bottom-solid">
           <div class="col col-2">
-            <div class="col-cell">收益估算<span class="text-red"> </span></div>
+            <div class="col-cell">收益估算<span class="text-red"></span></div>
             <div class="col-cell text-right">
               <a href="http://wap.renrenaijia.com/aijiabao/higher_yield" class="pop pop-min pop-circle-red pop-circle-white"> <i class="icon iconfont icon-wenzhuan text-tips"></i> 获取更高收益</a>
             </div>
@@ -51,7 +48,6 @@
             <div class="ui-range-tit text-center text-gray-dark">
               投资<span class="text-red text-normal-max r-amount">5000</span>元，预计每日可赚<span class="text-red text-normal-max r-profit">0.86</span>元
             </div>
-
             <div class="ui-range-plus">
               <input type="range" max="10000" min="100" step="1" value="5000" style="background: -webkit-linear-gradient(left, rgb(255, 140, 92), rgb(255, 64, 64) 50%, rgb(255, 218, 204) 50%, rgb(255, 218, 204));">
             </div>
@@ -65,7 +61,6 @@
           </div>
         </div>
       </div>
-
       <!--list--->
       <div class="panel margin-top-0_5rem border-top-solid border-bottom-solid">
         <div class="panel-head border-bottom-solid">
@@ -97,7 +92,6 @@
           </p>
         </div>
       </div>
-
       <!--<div class="list margin-top-0_5rem">
           <a class="list-cell-arrow-right" href="#">
               查看更多
@@ -119,8 +113,41 @@
 
 </template>
 <script>
+  import {getListChildren} from '../../api/listApi'
+  //import axios from 'axios'
+  export default{
+    data(){
+      return{
+        listDetail:{}
+      }
+    },
+    created(){
+      getListChildren(this.$route.params.id).then((res)=>{
+        console.log(res.data.data);
+        this.listDetail=res.data.data;
+      })
+    },
+    methods:{
 
+    },
+    filters:{
+      filterA:function (num) {
+        let number = new Number(num);
+        let str = number.toString();
+        //正则匹配
+        let newstr = str.replace(/\d{1,3}(?=(\d{3})+$)/g,function(s){
+          return s+','
+        });
+        return newstr;
+      }
+    }
+  }
 </script>
-<style>
-
+<style lang="less">
+  .container{
+    padding-top:0;
+    .padding-top-2rem {
+      padding-top: 4rem;
+    }
+  }
 </style>

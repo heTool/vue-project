@@ -47,11 +47,18 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src'), resolve('test')]
+        include: [
+          /src/,
+          '/node_modules/mint-ui/lib/'   //增加此项
+        ]
       },
       {
 				test: /\.css$/,
 				loader: "style-loader!css-loader",
+        include: [
+          /src/,
+          '/node_modules/mint-ui/lib/'   //增加此项
+        ]
 			},
 			{
 				test: /\.less$/,

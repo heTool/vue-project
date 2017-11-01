@@ -20,15 +20,15 @@ export function getHomeData() {
     },
     headers: {
       "req-header-device":"wap",
-      "req-header-device-type":"4",
-      "req-header-app-version":"3.0.0",
-      "req-header-push-id":"",
-      "req-header-client-version":"",
-      "req-header-device-id":"",
-      "req-header-channel-source":"",
-      "req-header-request-time":"1507864671000",
-      "ip":"192.168.10.82:8080"
-    },
+    "req-header-device-type":"4",
+    "req-header-app-version":"3.0.0",
+    "req-header-push-id":"",
+    "req-header-client-version":"",
+    "req-header-device-id":"",
+    "req-header-channel-source":"",
+    "req-header-request-time":"1507864671000",
+    "ip":"192.168.10.82:8080"
+  },
   }).then((res)=>{
     return Promise.resolve(res);
   });
@@ -58,5 +58,28 @@ export function getListData() {
   });
 }
 
+//请求子页面数据
+export function getListChildren(id) {
+  let params=new URLSearchParams();
+  params.append('projectId',id);
+  return axios({
+    method: 'post',
+    url: '/api/project/getProjectById',
+    params,
+    headers: {
+      "req-header-device":"pc",
+      "req-header-device-type":"4",
+      "req-header-app-version":"4.0",
+      "req-header-push-id":"",
+      "req-header-client-version":"",
+      "req-header-device-id":"",
+      "req-header-channel-source":"ajlc",
+      "req-header-request-time":"1507864671000",
+      "ip":"192.168.10.82"
+    },
+  }).then((res)=>{
+    return Promise.resolve(res);
+  });
+}
 
 

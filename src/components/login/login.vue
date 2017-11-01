@@ -12,7 +12,6 @@
             <router-link to="/register">
               注册
             </router-link>
-
           </div>
         </nav>
       </header>
@@ -38,7 +37,6 @@
             <div class="bar text-center text-gray">
               <a href="http://wap.renrenaijia.com/auth/login_pwd">账号密码登录</a>
             </div>
-
             <div class="text-center padding-top-2rem padding-bottom-2rem text-normal-min">
               <div class="line-height-1_5 text-gray">如未注册则自动注册且代表你同意</div>
               <div class="text-red"><a href="javascript:;" ui-dialog="service-rule" class="text-blue">《用户协议》</a></div>
@@ -50,6 +48,7 @@
   </transition>
 </template>
 <script>
+  import {getLoginData} from '../../api/loginApi'
   export default{
     data(){
       return{

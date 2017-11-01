@@ -14,7 +14,7 @@
 
           <router-link tag="div" class="col-cell col-cell-2 padding-top-0_5rem"  to="/auth/register">
             <!--<a href="/auth/login" class="btn btn-red-border btn-corner btn-min" style="width:3.5rem;">去认证</a>-->
-            <div class="btn btn-red-border btn-corner btn-min" style="width:3.5rem;">去领取</div>
+            <div class="btn btn-red-border btn-corner btn-min" style="width:3.5rem;">{{}}</div>
           </router-link>
 
         </div>

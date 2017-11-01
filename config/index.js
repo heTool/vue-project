@@ -1,6 +1,9 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 var path = require('path')
-
+/*var bodyParser = require('body-parser');
+var app=express()
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json())*/
 module.exports = {
   build: {
     env: require('./prod.env'),
@@ -43,4 +46,4 @@ module.exports = {
     // just be aware of this issue when enabling this option.
     cssSourceMap: false
   }
-}
+};

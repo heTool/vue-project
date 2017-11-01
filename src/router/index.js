@@ -26,13 +26,7 @@ export default new Router({
     },
     {
       path: '/list',
-      component: List,
-      children:[
-        {
-          path:':id',
-          component:listChildren
-        }
-      ]
+      component: List
     },
     {
       path: '/recommend',
@@ -50,6 +44,9 @@ export default new Router({
       component:Register
     },{
       path:'/listChildren',
+      component:listChildren
+    },{
+      path:'/list/:id',
       component:listChildren
     }
   ]

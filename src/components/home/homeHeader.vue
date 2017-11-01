@@ -30,11 +30,9 @@
 </template>
 <script>
   import {getRecommendData} from '../../api/recommendApi'
-
   export default{
     data(){
       return{
-
       }
     },
     created(){

@@ -109,10 +109,8 @@
           let key='88888888';
           let desPhone=des(key,this.form.tel);
           let desPassword=des(key,this.form.password);
-          console.log(desPhone);
-          console.log(desPassword);
           getRegisterData(desPhone,desPassword).then((res)=>{
-              console.log(res)
+              this.$router.push({path:'/login'})
           })
         }
       },

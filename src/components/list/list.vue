@@ -1,17 +1,11 @@
 <template>
-
     <transition name="slide">
-
         <div>
           <listAjb></listAjb>
           <listWZ></listWZ>
           <router-view></router-view>
         </div>
     </transition>
-
-
-
-
 </template>
 
 <script>
@@ -21,13 +15,22 @@
   export default{
 
     methods:{
+<<<<<<< HEAD
 
+=======
+      selectLi(productList){
+          this.$router.push({
+            path: `/list/${productList.projectId}`
+          })
+      }
+>>>>>>> 8fa1a95cf0db349345726b562f5ce0844e72b571
     },
     components: {
       ListAjb,
       ListWZ
     }
   }
+
 </script>
 
 <style lang="less">

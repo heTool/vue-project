@@ -5,7 +5,11 @@
       <div class="left">定期 · 稳赚计划</div>
     </div>
     <div class="list-body">
+<<<<<<< HEAD
         <div class="list-cell" v-for="item in productList" :class="item.hotWordsType!=0? 'mark-hot-sell' :'' " @click="select(item.projectId)">
+=======
+        <div class="list-cell" v-for="item in productList" :class="item.hotWordsType!=0? 'mark-hot-sell' :'' " @click="selectItem(item)">
+>>>>>>> 8fa1a95cf0db349345726b562f5ce0844e72b571
           <div class="list-cell-tit text-h2">
             {{item.projectName}}                      <!--returnMoney/tags-->
             <span class="pop pop-circle pop-circle-red pop-min" v-show="item.returnMoney">{{item.returnMoney}}</span>
@@ -26,6 +30,7 @@
           </div>
         </div>
 
+
     </div>
     <copy-right></copy-right>
     <div class="loading-container" v-show="!productList.length">
@@ -35,6 +40,7 @@
 </template>
 
 <script>
+
   import {getListData} from '../../api/listApi'
   import copyRight from 'components/comm/copyright'
   import Loading from 'components/loading/loading'
@@ -63,7 +69,6 @@
         Loading
       }
   }
-
 </script>
 
 <style lang="less">

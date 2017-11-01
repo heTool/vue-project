@@ -1,0 +1,45 @@
+/*
+Error: Invalid GBK character "\xE7"
+        on line 197 of kmjr.mobile.ui.v3.scss
+
+192: .list-cell-arrow-right:after{ transform: rotate(45deg); -webkit-transform: rotate(45deg);}
+193: 
+194: .list-items-avatar{ height: 2rem;width: 2rem; border-radius: 999rem; margin-top: -.75rem; margin-bottom: -.75rem }
+195: 
+196: .mark-hot-sell{position: relative; overflow: hidden}
+197: .mark-hot-sell:after{position:absolute;right: 0; top: 0; content: '热卖';width:3.5rem; line-height: 1.2;text-align: center; background-color: $red-normal; color: $white-normal; @extend .text-tips; transform:translate(.875rem,.5rem)  rotate(45deg);-webkit-transform:translate(.875rem,.5rem) rotate(45deg) ;}
+198: /******\/
+199: 
+200: /******\/
+201: .panel{ background-color: $white-normal;}
+202: .panel.panel-red{ background-color: $red-normal; color: $white-normal;}
+
+Backtrace:
+kmjr.mobile.ui.v3.scss:197
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/util.rb:1325:in `rescue in block in find_encoding_error'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/util.rb:1322:in `block in find_encoding_error'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/util.rb:1321:in `each'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/util.rb:1321:in `each_with_index'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/util.rb:1321:in `find_encoding_error'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/util.rb:930:in `check_sass_encoding'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/engine.rb:436:in `check_encoding!'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/engine.rb:392:in `_to_tree'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.24/bin/scss:13:in `<top (required)>'
+C:/Ruby23/bin/scss:22:in `load'
+C:/Ruby23/bin/scss:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid GBK character \"\xE7\"\A         on line 197 of kmjr.mobile.ui.v3.scss\A \A 192: .list-cell-arrow-right:after{ transform: rotate(45deg); -webkit-transform: rotate(45deg);}\A 193: \A 194: .list-items-avatar{ height: 2rem;width: 2rem; border-radius: 999rem; margin-top: -.75rem; margin-bottom: -.75rem }\A 195: \A 196: .mark-hot-sell{position: relative; overflow: hidden}\A 197: .mark-hot-sell:after{position:absolute;right: 0; top: 0; content: '热卖';width:3.5rem; line-height: 1.2;text-align: center; background-color: $red-normal; color: $white-normal; @extend .text-tips; transform:translate(.875rem,.5rem)  rotate(45deg);-webkit-transform:translate(.875rem,.5rem) rotate(45deg) ;}\A 198: /******/\A 199: \A 200: /******/\A 201: .panel{ background-color: $white-normal;}\A 202: .panel.panel-red{ background-color: $red-normal; color: $white-normal;}"; }
